@@ -24,9 +24,19 @@ namespace NuGetGallery
         }
 
         [HttpGet]
+        public virtual ActionResult Index()
+        {
+            var allFeeds = GetService<ICuratedFeedService>().CuratedFeedRepository.GetAll().Select(cf => cf.Name);
+
+            return View(allFeeds);
+
+        }
+
+        [HttpGet]
         public virtual ActionResult CuratedFeed(string name)
         {
             var curatedFeed = GetService<ICuratedFeedService>().GetFeedByName(name, includePackages: true);
+            
             if (curatedFeed == null)
             {
                 return HttpNotFound();

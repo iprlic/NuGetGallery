@@ -35,6 +35,7 @@
         public const string VerifyPackageKey = "VerifyPackageKey";
         public const string CancelUpload = "CancelUpload";
         public const string CuratedFeed = "CuratedFeed";
+        public const string CuratedFeeds = "CuratedFeeds";
         public const string CuratedFeedListPackages = "CuratedFeedListPackages";
         public const string CreateCuratedPackageForm = "CreateCuratedPackageForm";
         public const string CuratedPackages = "CuratedPackages";

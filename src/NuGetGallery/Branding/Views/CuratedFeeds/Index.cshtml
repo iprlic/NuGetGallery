@@ -1,0 +1,14 @@
+﻿@model IQueryable<string>
+@{
+    ViewBag.Title = "Feeds";
+    ViewBag.Tab = "curratedFeeds";
+}
+
+<h1>Feeds</h1>
+<p>This is a list of all Omega curated feeds.</p>
+<ul>
+    @foreach (var feed in Model)
+    {
+        <li><a href="@Url.CuratedPackageList(1, "", feed)">@feed</a></li>
+    }
+</ul>

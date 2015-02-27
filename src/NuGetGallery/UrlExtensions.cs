@@ -37,6 +37,11 @@ namespace NuGetGallery
             return url.RouteUrl(RouteName.StatisticsHome);
         }
 
+        public static string CurratedFeeds(this UrlHelper url)
+        {
+            return url.RouteUrl(RouteName.CuratedFeeds);
+        }
+
         public static string StatisticsAllPackageDownloads(this UrlHelper url)
         {
             return url.RouteUrl(RouteName.StatisticsPackages);

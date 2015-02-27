@@ -8,7 +8,7 @@ namespace NuGetGallery
 {
     public class CuratedFeedService : ICuratedFeedService
     {
-        protected IEntityRepository<CuratedFeed> CuratedFeedRepository { get; set; }
+        public IEntityRepository<CuratedFeed> CuratedFeedRepository { get; set; }
         protected IEntityRepository<CuratedPackage> CuratedPackageRepository { get; set; }
 
         protected CuratedFeedService()

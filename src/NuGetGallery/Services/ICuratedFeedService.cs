@@ -24,6 +24,7 @@ namespace NuGetGallery
             int curatedPackageKey,
             bool included);
 
+        IEntityRepository<CuratedFeed> CuratedFeedRepository { get; set; }
         CuratedFeed GetFeedByName(string name, bool includePackages);
         CuratedFeed GetFeedByKey(int key, bool includePackages);
         IEnumerable<CuratedFeed> GetFeedsForManager(int managerKey);

@@ -967,6 +967,10 @@
     <Compile Include="RequestModels\CreateCuratedPackageRequest.cs" />
     <Compile Include="RequestModels\VerifyPackageRequest.cs" />
     <Content Include="App_Data\Files\Content\ReadOnly.md" />
+    <Content Include="Branding\Views\Packages\DisplayPackage.cshtml" />
+    <Content Include="Branding\Views\Shared\Layout.cshtml" />
+    <Content Include="Branding\Views\Shared\SiteMenu.cshtml" />
+    <Content Include="Branding\Views\CuratedFeeds\Index.cshtml" />
     <None Include="Scripts\jquery-1.11.0.intellisense.js" />
     <Content Include="Scripts\jquery-1.11.0.js" />
     <Content Include="Scripts\jquery-1.11.0.min.js" />
@@ -1102,6 +1106,7 @@
     <Content Include="Views\Pages\Privacy.cshtml" />
     <Content Include="Views\Pages\Terms.cshtml" />
     <Content Include="Views\Pages\About.cshtml" />
+    <Content Include="Views\CuratedFeeds\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <CodeAnalysisDictionary Include="Properties\CodeAnalysisDictionary.xml" />
@@ -1398,7 +1403,7 @@
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Web.config" />
     <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
-    <Content Include="App_Data\Files\Content\Alert.md" />
+    <Content Include="App_Data\Files\Content\_Alert.md" />
     <Content Include="Areas\Admin\Views\Lucene\Index.cshtml">
       <SubType>Code</SubType>
     </Content>

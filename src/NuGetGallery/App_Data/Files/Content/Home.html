@@ -1,8 +1,8 @@
-<section class="featured">
+﻿<section class="featured">
     <div>
         <h1>What is NuGet?</h1>
         <p>NuGet is the package manager for the Microsoft development platform including .NET. The NuGet client tools provide the ability to produce and consume packages. The NuGet Gallery is the central package repository used by all package authors and consumers.</p>
-        <a class="install" href="http://docs.nuget.org/docs/start-here/installing-nuget">Install NuGet</a>
+        <a class="install" href="http://docs.nuget.org/docs/start-here/installing-nuget" target="_blank">Install NuGet</a>
     </div>
     <img src="Content/Logos/hero.png" alt="Manage NuGet Packages Dialog Window" /> 
 </section> 
@@ -24,23 +24,16 @@
 </section>
 
 <section class="release">
-    <h2>Developer Environment</h2>
-    <p>This is a developer environment! 
-        If you want to show a custom message here, either change the App_Data\Files\Content\Home.html file, 
-        or if you are using the AzureStorageBlob package store type, upload a Home.md or Home.html to the "content" 
-        container of your blob storage account.</p>
+    <h2>Dodavanje Omega NuGet Servera u Visual Studio</h2>
+    <p>
+        Otići na Tools -> NuGet Package Manager -> Package Manager Settings -> Package Sources Kliknuti na ikonu "+". U polje Name upisati "Omega software". U polje Source upisati http://proton:8000/api/v2/
+    </p><p>
+        NAPOMENA: Moguće su razlike ovisno o verziji Visual Studia
+    </p>
 </section>
 
-<section class="info">
-    <h3>About</h3>
-    <p>When you use NuGet to install a package, it copies the library files to your solution and automatically updates your project 
-      (add references, change config files, etc.). If you remove a package, NuGet reverses whatever changes it made so that 
-      no clutter is left.</p>
-</section>
 
-<h3>Important Notice</h3>
-<p>You can develop your own package and share it via the NuGet Gallery. Read the documentation for more details on 
-   <a href="http://docs.nuget.org/docs/creating-packages/creating-and-publishing-a-package" 
-     title="Creating and submitting a package">how to create and publish a package</a>.
-   If you don't plan on submitting a package, there's no need to register.</p>
+
+
+
 
